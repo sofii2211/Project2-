@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #200f3f;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #353435;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+        }
+
+        #sidebar {
+            width: 200px;
+            background-color: #200f3f;
+            color: #fff;
+            padding: 10px;
+        }
+
+        #sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #sidebar li {
+            margin-bottom: 5px;
+        }
+
+        #sidebar a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        #sidebar a:hover {
+            background-color: #3a3939;
+        }
+
+        #content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #3a3939;
+            color: white;
+            text-align: left;
+            padding: 10px;
+        }
+        .fw-bold {
+            color: white;
+        }
+        footer p {
+            justify-items: left;
+        }
+    </style>
+    <title>RENTAL CAR Admin</title>
+</head>
+<body>
+    <header>
+        <h1>Admin Rental Car</h1>
+    </header>
+
+    <nav>
+
+        <div class="col-lg-6 mb-3">
+            <h2 class="fw-bold" flex-directio="left">Daftar Peminjam</h2>
+          </div>
+        <div class="bar-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Admin</a></li>
+            <li><a href="#">Daftar Peminjam</a></li>
+        </ul>
+    </div>
+    </nav>
+
+    <main>
+        <div id="sidebar">
+            <ul>
+                <li><a href="product & service.html">> produk</a></li>
+                <li><a href="daftar peminjam.html">> Peminjam</a></li>
+                <li><a href="transaksi.html">> transaksi</a></li>
+                <li><a href="login.html" id="logout">> Logout</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Nama</th>
+                        <th>Kontak Person</th>
+                        <th>No HP</th>
+                        <th>Email</th>
+                        <th>Kategori</th>
+                        <th>Action</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>PT Toda Water</td>
+                        <td>Dandi P</td>
+                        <td>085632642</td>
+                        <td>todawater@gmail.com</td>
+                        <td>Perusahaan</td>
+                        <td>
+                            <button class="detail-btn">Detail</button>
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                   
+                    <!-- Add more data rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Develop By Mahasiswa STT-NF</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
